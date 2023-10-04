@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*CSS - Comment */
+        /* Tag selector */
+        p {
+            color :blue
+            font-size : 110%
+        }
+        /* Class selector */
+        .class1 {
+            background-color: aqua
+            color : green;
+        }
+
+        /* id selector*/
+        #mijn-lijst {
+            border: 2px solid red;
+        }
+
+
+    </style>
+
+<script>
+    //Javascript- Comment
+    
+    </script>
+
+</head>
+<body>
+    <!--Dit is commentaar -->
+    <label>Input 1</body>
+    <input type="number" id="invoer1">
+    <label>Input 2</body>
+    <input type="number" id="invoer2">
+
+    <button type="button" onclick="doCalculation"('on click')"> 
+        Addition
+    </button>
+
+    <!-- Dit zijn headers h1 tot h5 -->
+
+    <h1> Mijn website! </h1>
+    
+    <h2 class="class1 class2 class3" >  Dit is mijn 2de header</h2>
+
+    <!--Teksten . paragraaf en losse teksten-->
+    <p>Dit is mijn eerste paragraaf</p>
+    <p>Dit is mijn tweede paragraaf</p>
+
+    <span style="color:red"> Dit is mijn eerste span </span>
+
+    <span> Dit is mijn tweede span </span>
+
+    <!-- Lijsten Ordered en Unordered -->
+    <ol>
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+        <li> Item 3 </li>   
+    </ol>
+
+    <ul id="mijlijst">
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+        <li> Item 3 </li>
+    </ul>
+
+    <img src="downloadhtmlimage.png"> 
+
+<!-- Table is alleen bedoelt voor data -->
+
+<table>
+  <tr> 
+    <td> Rij 1 kolom 1 </td>  
+    <td> Rij 2 kolom 2 </td>  
+  </tr>
+
+</table>
+
+<table>
+    <thead>
+        <tr> 
+            <th>Thomas </th>
+            <th> 24 jaar </th>
+        </tr>
+    </thead>
+
+    <script>
+        // 2 manieren data weergeven
+        // alert('dit is een alart');
+        console.log('dit is een melding');
+
+        let a; //declaration (undefined)
+        a = 6;  // assignment
+        a = 12; // assignment
+        
+        let b = " tekst "; // tekst = string "" ' '````
+
+        const c = true;
+       //  c= false // constant mag je niet overschrijven
+        //string - number - boolean (true/false)
+
+        console.log('a=' +a)
+        console.log('b=' +b)
+
+        let getal1= a + 23;
+        let getal2= 42 - getal1
+        let getal3= 4 * a
+        let getal4= getal2 / getal3
+
+        let comp1= a == "21"; // coparator vergelijkt de waarde
+        let comp2= a === "21"  // false
+
+        if(comp1) {
+            //voert uit als comp1 true is
+
+        }
+
+        if (a == "21") {
+
+        } else {
+
+        }
+        // Function declaration
+        function addition() {
+            let add1 = 34;
+            let add2 = 23;
+
+            console.log('addition = ' + (add1 + add2)) ;
+        }
+
+        function subtract (arg1, arg2) {
+            let answer = arg1+arg2;
+            console.log('Anwswer= ' + answer);
+        }
+        
+
+        // Function call
+        addition();
+        addition();
+        addition();
+        addition();
+
+        // recall function
+        subtract (4,6) ; 
+        subtract(126,56) ;
+
+        function doCalculation(){
+            //document.getElementbyId kan je gebruiken om toegang te krijgen tot een element
+            let invoerwaarde = document.getElementbyId('invoer 1'). value;
+            let invoerwaarde2 = document.getElementbyId('invoer 2'). value;
+
+            invoerwaarde =  parseInt(invoerwaarde) ; 
+            invoerwaarde2 =  parseInt(invoerwaarde2) ;
+
+
+            alert('Calculation is ' + (invoerwaarde) + invoerwaarde2));
+
+            let bodyElements = document.getElementsByTagName('body');
+            bodyElements[0].innerHTML = ' ' ; 
+
+        }
+    
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
